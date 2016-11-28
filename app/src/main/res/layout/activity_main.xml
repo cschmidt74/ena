@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kekiyo.chsch.asterix.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Tank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TankText"
+            android:textAlignment="center" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TankProgressBar" />
+
+        <TextView
+            android:text="10%"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TankTextInfo"
+            android:textAlignment="center"
+            android:progress="1"
+            android:indeterminate="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacer_height"
+            android:background="@color/spacer_color"
+            android:layout_marginBottom="@dimen/spacer_margin"
+            android:layout_marginTop="@dimen/spacer_margin"/>
+
+        <TextView
+            android:text="Verriegelung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/VerriegelungText"
+            android:textAlignment="center" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TableRow
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:textOff="Fahrer"
+                    android:textOn="Fahrer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/VerriegelungFahrerToggleButton"
+                    android:layout_weight="1" />
+
+                <ToggleButton
+                    android:textOff="Beifahrer"
+                    android:textOn="Beifahrer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/VerriegelungBeifahrerFahrerToggleButton"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:textOff="Hintertür Links"
+                    android:textOn="Hintertür Links"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/VerriegelungHintertuerLinksFahrerToggleButton"
+                    android:layout_weight="1" />
+
+                <ToggleButton
+                    android:textOff="Hintertür Rechts"
+                    android:textOn="Hintertür Rechts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/VerriegelungHintertuerRechtsFahrerToggleButton"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ToggleButton
+                    android:textOff="Kofferraum"
+                    android:textOn="Kofferraum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/VerriegelungKofferraumFahrerToggleButton"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="Schließen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/VerriegelungSchliessenToggleButton"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+        <ToggleButton
+            android:textOff="Kofferraumluke"
+            android:textOn="Kofferraumluke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/VerriegelungKofferraumLukeFahrerToggleButton" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacer_height"
+            android:background="@color/spacer_color"
+            android:layout_marginBottom="@dimen/spacer_margin"
+            android:layout_marginTop="@dimen/spacer_margin"/>
+
+        <TextView
+            android:text="Klimaanlage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/KlimaanlageSeekBar"
+                android:layout_weight="1" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/KlimaanlageSwitch"
+                android:layout_weight="0.17" />
+        </LinearLayout>
+
+        <TextView
+            android:text="20°C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/KlimaanlageTextInfo"
+            android:textAlignment="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacer_height"
+            android:background="@color/spacer_color"
+            android:layout_marginBottom="@dimen/spacer_margin"
+            android:layout_marginTop="@dimen/spacer_margin"/>
+
+        <TextView
+            android:text="Los"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textAlignment="center" />
+
+        <TableLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_gravity="center_horizontal">
+
+            <TableRow>
+                <Button
+                    android:text="Standort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LosStandortButton"
+                    android:layout_weight="1"
+                    android:elevation="0dp" />
+
+                <Button
+                    android:text="Start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LosStartButton"
+                    android:layout_weight="1" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</RelativeLayout>

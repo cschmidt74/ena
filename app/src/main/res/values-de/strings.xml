@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="POITypes">
+        <item>Fuel</item>
+        <item>Amenity</item>
+        <item>Pub</item>
+    </string-array>
+    <string name="app_name">Asterix</string>
+    <string name="buchstabe">Buchstabe</string>
+</resources>

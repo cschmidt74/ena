@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">Asterix</string>
+    <string-array name="POITypes">
+        <item>Tankstelle</item>
+        <item>Sehenswuerdigkeit</item>
+        <item>Kneipe</item>
+    </string-array>
+    <string-array name="POIS"></string-array>
+    <string name="buchstabe">Letter</string>
+
+</resources>
